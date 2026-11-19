@@ -1,6 +1,6 @@
 # ⚡ VoltTrack: Electricity Consumption Management & Energy Usage Analysis System
 
-[![GitHub Pages](https://img.shields.io/badge/Live%20Demo-GitHub%20Pages-2563eb?style=for-the-badge&logo=github)](https://kanishka-k.github.io/electricity-consumption-management/)
+[![GitHub Pages](https://img.shields.io/badge/Live%20Demo-GitHub%20Pages-2563eb?style=for-the-badge&logo=github)](https://kanishka-0312.github.io/volttrack-electricity-system/)
 [![Java](https://img.shields.io/badge/Java-SE%2017%2B-orange?style=for-the-badge&logo=openjdk)](java/)
 [![Python](https://img.shields.io/badge/Python-3.11-blue?style=for-the-badge&logo=python)](python/)
 [![MySQL](https://img.shields.io/badge/Database-MySQL%20%7C%20SQLite-4479A1?style=for-the-badge&logo=mysql)](database/)
@@ -18,7 +18,7 @@
 ## 🌐 24/7 Live Web Application (Free GitHub Pages Hosting)
 
 The full-stack web application is hosted live 24/7 on **GitHub Pages** with zero hosting fees and 100% uptime:
-👉 **[Click Here to Launch Live Website](https://kanishka-k.github.io/electricity-consumption-management/)**  
+👉 **[Click Here to Launch Live Website](https://kanishka-0312.github.io/volttrack-electricity-system/)**  
 *(Replace with your GitHub repository URL once pushed: `https://<your-username>.github.io/<repo-name>/`)*
 
 ### 🚀 How to Enable GitHub Pages for 24/7 Live Hosting (in 30 seconds):
