@@ -6,7 +6,7 @@ import java.util.regex.Pattern;
  * Utility class providing validation methods for user and system inputs.
  * Demonstrates String operations, Regex pattern matching (Unit 4, 25ITT32).
  * 
- * @author Kanishka K (Reg No: 732925ITR045, Class: 25IT3A)
+ * @author Kanishka K (Reg No: 732925ITR044, Class: 25IT3A)
  */
 public class InputValidator {
     private static final Pattern EMAIL_PATTERN = Pattern.compile("^[A-Za-z0-9+_.-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,6}$");

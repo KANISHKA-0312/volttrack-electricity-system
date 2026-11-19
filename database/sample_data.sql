@@ -1,7 +1,7 @@
 -- =====================================================================
 -- DATABASE MANAGEMENT SYSTEMS (25ITT31)
 -- Scenario 14: Sample Dataset for Electricity Consumption System
--- Student: Kanishka K | Register No: 732925ITR045 | Class: 25IT3A
+-- Student: Kanishka K | Register No: 732925ITR044 | Class: 25IT3A
 -- =====================================================================
 
 -- 1. Insert Tariff Plans (TANGEDCO / Standard Electricity Board Slab Model)

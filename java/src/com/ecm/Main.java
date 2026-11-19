@@ -13,7 +13,7 @@ import java.util.*;
  * 
  * Scenario 14: Project-Based Assessment
  * Course: 25ITT32 Java Programming
- * Author: Kanishka K | Register No: 732925ITR045 | Class: 25IT3A
+ * Author: Kanishka K | Register No: 732925ITR044 | Class: 25IT3A
  * Institution: Velalar College of Engineering and Technology, Erode - 12
  */
 public class Main {
@@ -40,7 +40,7 @@ public class Main {
         System.out.println("================================================================================");
         System.out.println("       ELECTRICITY CONSUMPTION MANAGEMENT & ENERGY USAGE ANALYSIS SYSTEM       ");
         System.out.println("                 Velalar College of Engineering and Technology                 ");
-        System.out.println("         Student: Kanishka K | Reg No: 732925ITR045 | Class: 25IT3A            ");
+        System.out.println("         Student: Kanishka K | Reg No: 732925ITR044 | Class: 25IT3A            ");
         System.out.println("================================================================================");
 
         while (running) {

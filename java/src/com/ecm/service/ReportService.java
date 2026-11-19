@@ -12,7 +12,7 @@ import java.util.stream.Collectors;
  * Service for generating statistical reports and high-consumption analytics.
  * Heavily utilizes Java 8+ Stream API, Lambdas, and Collectors (Unit 5, 25ITT32).
  * 
- * @author Kanishka K (Reg No: 732925ITR045, Class: 25IT3A)
+ * @author Kanishka K (Reg No: 732925ITR044, Class: 25IT3A)
  */
 public class ReportService {
 

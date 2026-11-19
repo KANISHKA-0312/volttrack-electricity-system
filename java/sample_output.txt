@@ -1,7 +1,7 @@
 ================================================================================
        ELECTRICITY CONSUMPTION MANAGEMENT & ENERGY USAGE ANALYSIS SYSTEM       
                  Velalar College of Engineering and Technology                 
-         Student: Kanishka K | Reg No: 732925ITR045 | Class: 25IT3A            
+         Student: Kanishka K | Reg No: 732925ITR044 | Class: 25IT3A            
 ================================================================================
 
 ----------------------------- MAIN OPERATIONS -----------------------------

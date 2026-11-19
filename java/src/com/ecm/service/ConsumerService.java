@@ -11,7 +11,7 @@ import java.util.concurrent.atomic.AtomicInteger;
  * Service managing consumer profiles, directory searches, and registration.
  * Utilizes Collections Framework (Map, List) for memory management.
  * 
- * @author Kanishka K (Reg No: 732925ITR045, Class: 25IT3A)
+ * @author Kanishka K (Reg No: 732925ITR044, Class: 25IT3A)
  */
 public class ConsumerService {
     private final Map<Integer, Consumer> consumerMap = new ConcurrentHashMap<>();

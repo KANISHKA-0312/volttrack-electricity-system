@@ -2,7 +2,7 @@
 ================================================================================
 FOUNDATIONS OF DATA SCIENCE (25ITC31)
 Scenario 14: Electricity Consumption Management and Energy Usage Analysis
-Author: Kanishka K | Register No: 732925ITR045 | Class: 25IT3A
+Author: Kanishka K | Register No: 732925ITR044 | Class: 25IT3A
 Institution: Velalar College of Engineering and Technology, Erode - 12
 ================================================================================
 This script performs:
@@ -250,7 +250,7 @@ def main():
     print("=" * 80)
     print("VELALAR COLLEGE OF ENGINEERING AND TECHNOLOGY | IT DEPARTMENT")
     print("25ITC31 - FOUNDATIONS OF DATA SCIENCE: AUTOMATED PIPELINE")
-    print("Student: Kanishka K | Register No: 732925ITR045 | Class: 25IT3A")
+    print("Student: Kanishka K | Register No: 732925ITR044 | Class: 25IT3A")
     print("=" * 80)
 
     df = load_and_preprocess_data()

@@ -7,7 +7,7 @@ import java.time.LocalDate;
  * Entity representing an itemized electricity bill.
  * Contains units consumed, slab breakdowns, charges, and payment status.
  * 
- * @author Kanishka K (Reg No: 732925ITR045, Class: 25IT3A)
+ * @author Kanishka K (Reg No: 732925ITR044, Class: 25IT3A)
  */
 public class Bill implements Serializable {
     private static final long serialVersionUID = 1L;

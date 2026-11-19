@@ -2,7 +2,7 @@
  * VOLTTRACK - Application Controller & State Manager
  * Handles Local Database Storage, Tab Navigation, Modal Forms, and Real-time Calculations.
  * 
- * Student: Kanishka K | Register No: 732925ITR045 | Class: 25IT3A
+ * Student: Kanishka K | Register No: 732925ITR044 | Class: 25IT3A
  * Institution: Velalar College of Engineering and Technology, Erode - 12
  */
 
@@ -355,7 +355,7 @@ class App {
         <div class="invoice-header">
           <h2 style="color: #1e3a8a; margin-bottom: 0.2rem;">TAMIL NADU ELECTRICITY BOARD</h2>
           <div style="font-size: 0.85rem; color: #475569;">ELECTRICITY CONSUMPTION & CHARGES INVOICE</div>
-          <div style="font-size: 0.75rem; color: #64748b; margin-top: 4px;">Assessment: Scenario 14 | System Author: Kanishka K (Reg No: 732925ITR045)</div>
+          <div style="font-size: 0.75rem; color: #64748b; margin-top: 4px;">Assessment: Scenario 14 | System Author: Kanishka K (Reg No: 732925ITR044)</div>
         </div>
 
         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; font-size: 0.85rem; margin-bottom: 1rem;">

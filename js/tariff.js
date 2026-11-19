@@ -2,7 +2,7 @@
  * VOLTTRACK - Electricity Tariff Engine (JavaScript)
  * Mirrors com.ecm.service.BillingService (Java) exactly for client-side live computations.
  * 
- * Author: Kanishka K | Reg No: 732925ITR045 | Class: 25IT3A
+ * Author: Kanishka K | Reg No: 732925ITR044 | Class: 25IT3A
  * Institution: Velalar College of Engineering and Technology, Erode - 12
  */
 

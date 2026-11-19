@@ -13,7 +13,7 @@ import java.util.concurrent.atomic.AtomicInteger;
  * Concrete implementation of billing and tariff calculations.
  * Implements precise progressive slab calculation algorithms.
  * 
- * @author Kanishka K (Reg No: 732925ITR045, Class: 25IT3A)
+ * @author Kanishka K (Reg No: 732925ITR044, Class: 25IT3A)
  */
 public class BillingService implements TariffCalculationService {
 

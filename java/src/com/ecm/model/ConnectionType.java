@@ -4,7 +4,7 @@ package com.ecm.model;
  * Enumeration representing electricity connection types and their base parameters.
  * Aligns with TANGEDCO / Standard Electricity Board classifications.
  * 
- * @author Kanishka K (Reg No: 732925ITR045, Class: 25IT3A)
+ * @author Kanishka K (Reg No: 732925ITR044, Class: 25IT3A)
  */
 public enum ConnectionType {
     DOMESTIC("Domestic Residential", 35.00, 5.00),

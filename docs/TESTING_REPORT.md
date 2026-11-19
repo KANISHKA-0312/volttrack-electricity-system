@@ -1,7 +1,7 @@
 # SOFTWARE TESTING TECHNIQUES & TEST CASE VERIFICATION REPORT
 ## Scenario 14: Electricity Consumption Management and Energy Usage Analysis System
 
-**Student:** Kanishka K | **Register No:** 732925ITR045 | **Class:** 25IT3A  
+**Student:** Kanishka K | **Register No:** 732925ITR044 | **Class:** 25IT3A  
 **Institution:** Velalar College of Engineering and Technology, Erode - 12  
 **Course Code:** 25ITT33 – Software Engineering (Unit 4: Software Testing)
 

@@ -1,7 +1,7 @@
 # DATABASE NORMALIZATION REPORT (1NF TO BCNF)
 ## Scenario 14: Electricity Consumption Management and Energy Usage Analysis System
 
-**Student:** Kanishka K | **Register No:** 732925ITR045 | **Class:** 25IT3A  
+**Student:** Kanishka K | **Register No:** 732925ITR044 | **Class:** 25IT3A  
 **Institution:** Velalar College of Engineering and Technology, Erode - 12  
 **Course Code:** 25ITT31 – Database Management Systems (Unit 3: Normalization)
 

@@ -7,7 +7,7 @@ import java.time.LocalDate;
  * Consumer entity representing an electricity customer.
  * Demonstrates OOP encapsulation, constructors, and access control.
  * 
- * @author Kanishka K (Reg No: 732925ITR045, Class: 25IT3A)
+ * @author Kanishka K (Reg No: 732925ITR044, Class: 25IT3A)
  */
 public class Consumer implements Serializable {
     private static final long serialVersionUID = 1L;

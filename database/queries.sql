@@ -1,7 +1,7 @@
 -- =====================================================================
 -- DATABASE MANAGEMENT SYSTEMS (25ITT31)
 -- Scenario 14: Comprehensive SQL Queries, Views, Triggers, & Procedures
--- Student: Kanishka K | Register No: 732925ITR045 | Class: 25IT3A
+-- Student: Kanishka K | Register No: 732925ITR044 | Class: 25IT3A
 -- =====================================================================
 
 -- ---------------------------------------------------------------------

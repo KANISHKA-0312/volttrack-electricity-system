@@ -7,7 +7,7 @@
 **Department:** Department of Information Technology  
 **Academic Year:** 2026-27 (ODD) | **Class:** 25IT3A  
 **Student Name:** Kanishka K  
-**Register Number:** 732925ITR045  
+**Register Number:** 732925ITR044  
 **Assigned Register Number Series:** 14, 44, 74, 104  
 **Course Code & Title:** 25ITT33 – Software Engineering  
 

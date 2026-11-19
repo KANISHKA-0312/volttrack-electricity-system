@@ -2,7 +2,7 @@
  * VOLTTRACK - Client-Side Interactive Data Visualizations
  * Zero-dependency SVG/Canvas chart renderer for 100% offline & GitHub Pages reliability.
  * 
- * Author: Kanishka K | Reg No: 732925ITR045 | Class: 25IT3A
+ * Author: Kanishka K | Reg No: 732925ITR044 | Class: 25IT3A
  */
 
 const ChartRenderer = {

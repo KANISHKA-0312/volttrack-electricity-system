@@ -8,7 +8,7 @@ import java.sql.SQLException;
  * Database connection manager for JDBC connectivity.
  * Demonstrates Unit 4 Database Connection and JPA/JDBC concepts.
  * 
- * @author Kanishka K (Reg No: 732925ITR045, Class: 25IT3A)
+ * @author Kanishka K (Reg No: 732925ITR044, Class: 25IT3A)
  */
 public class DatabaseConnection {
     // Configurable parameters for MySQL / SQLite connection

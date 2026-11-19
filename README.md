@@ -10,7 +10,7 @@
 > **DEPARTMENT OF INFORMATION TECHNOLOGY**  
 > **ACADEMIC YEAR: 2026-27 (ODD) | CLASS: 25IT3A**  
 > **ACTIVITY: Project-Based Assessment | Scenario 14**  
-> **Student Name:** Kanishka K | **Register Number:** `732925ITR045`  
+> **Student Name:** Kanishka K | **Register Number:** `732925ITR044`  
 > **Assigned Scenario Register No Series:** 14, 44, 74, 104  
 
 ---
@@ -180,7 +180,7 @@ The Python data pipeline generates the following 5 analytical charts:
 ## 👤 Author Credentials
 
 * **Student Name:** Kanishka K
-* **Register Number:** `732925ITR045`
+* **Register Number:** `732925ITR044`
 * **Degree & Class:** B.Tech Information Technology, Class **25IT3A**
 * **Institution:** Velalar College of Engineering and Technology (Autonomous), Thindal, Erode - 638 012
 * **Project Scenario:** Scenario 14 – Electricity Consumption Management and Energy Usage Analysis System

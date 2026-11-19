@@ -7,7 +7,7 @@ import java.time.LocalDate;
  * Entity representing monthly meter reading for a consumer.
  * Calculates units consumed = currentReading - previousReading.
  * 
- * @author Kanishka K (Reg No: 732925ITR045, Class: 25IT3A)
+ * @author Kanishka K (Reg No: 732925ITR044, Class: 25IT3A)
  */
 public class MeterReading implements Serializable {
     private static final long serialVersionUID = 1L;
