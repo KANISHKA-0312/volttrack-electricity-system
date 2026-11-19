@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VoltTrack | Electricity Consumption Management & Energy Usage Analysis</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Top Navigation & Student Header -->
+  <header class="top-header">
+    <div class="header-inner">
+      <div class="brand-section">
+        <div class="brand-logo">⚡</div>
+        <div>
+          <div class="brand-title">VoltTrack Enterprise</div>
+          <div class="brand-sub">Electricity Consumption Management & Energy Usage Analysis System</div>
+        </div>
+      </div>
+
+      <div class="student-badge">
+        <span>🎓</span>
+        <div>
+          <strong>Kanishka K</strong> (Reg: <code>732925ITR045</code>) | Class: <b>25IT3A</b> | VCET
+        </div>
+      </div>
+
+      <div class="header-actions">
+        <button id="theme-toggle" class="btn btn-outline" title="Toggle Dark/Light Mode">🌓 Theme</button>
+        <button id="reset-demo-btn" class="btn btn-outline" title="Reset Demo Data">🔄 Reset Data</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navigation Tabs -->
+  <nav class="nav-bar">
+    <div class="nav-inner">
+      <button class="nav-tab active" data-tab="tab-dashboard">📊 Dashboard</button>
+      <button class="nav-tab" data-tab="tab-consumers">👥 Consumers Management</button>
+      <button class="nav-tab" data-tab="tab-readings">⚡ Meter Readings & Billing</button>
+      <button class="nav-tab" data-tab="tab-high">🚨 High Consumption Alerts</button>
+      <button class="nav-tab" data-tab="tab-data-science">📈 Python Data Science & EDA</button>
+      <button class="nav-tab" data-tab="tab-academics">📑 Academic SRS & Architecture</button>
+    </div>
+  </nav>
+
+  <!-- Main Content Wrapper -->
+  <main class="main-wrapper">
+
+    <!-- TAB 1: DASHBOARD -->
+    <section id="tab-dashboard" class="tab-pane active">
+      <!-- KPI Cards -->
+      <div class="kpi-grid">
+        <div class="kpi-card">
+          <div class="kpi-icon blue">👥</div>
+          <div class="kpi-info">
+            <h4>Total Consumers</h4>
+            <div id="kpi-total-consumers" class="value">0</div>
+            <div class="subtext">Active accounts across Erode</div>
+          </div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-icon green">⚡</div>
+          <div class="kpi-info">
+            <h4>Energy Consumed</h4>
+            <div id="kpi-total-units" class="value">0 kWh</div>
+            <div class="subtext">Current period total</div>
+          </div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-icon amber">₹</div>
+          <div class="kpi-info">
+            <h4>Total Billed</h4>
+            <div id="kpi-total-revenue" class="value">₹0</div>
+            <div class="subtext">Revenue invoiced</div>
+          </div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-icon red">⚠️</div>
+          <div class="kpi-info">
+            <h4>High Usage Alerts</h4>
+            <div id="kpi-high-alerts" class="value">0</div>
+            <div class="subtext">Exceeding threshold</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Live Interactive Charts -->
+      <div class="chart-grid">
+        <div class="panel-card">
+          <div class="panel-header">
+            <div class="panel-title">📈 Monthly Energy Consumption Trends (kWh)</div>
+          </div>
+          <div class="panel-body">
+            <div id="chart-monthly-trend"></div>
+          </div>
+        </div>
+
+        <div class="panel-card">
+          <div class="panel-header">
+            <div class="panel-title">⚡ Consumption by Connection Category (kWh)</div>
+          </div>
+          <div class="panel-body">
+            <div id="chart-category-bar"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 2: CONSUMERS MANAGEMENT -->
+    <section id="tab-consumers" class="tab-pane">
+      <div class="panel-card">
+        <div class="panel-header">
+          <div class="panel-title">➕ Register New Electricity Consumer</div>
+        </div>
+        <div class="panel-body">
+          <form id="add-consumer-form">
+            <div class="form-grid">
+              <div class="form-group">
+                <label>Full Consumer Name *</label>
+                <input type="text" id="new-name" class="form-control" placeholder="e.g. Ramachandran S" required>
+              </div>
+              <div class="form-group">
+                <label>Connection Tariff Type *</label>
+                <select id="new-type" class="form-control">
+                  <option value="Domestic">Domestic (Residential Slab)</option>
+                  <option value="Commercial">Commercial (Business & Shops)</option>
+                  <option value="Industrial">Industrial (Manufacturing)</option>
+                  <option value="Agricultural">Agricultural (Pump-set)</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Mobile Number *</label>
+                <input type="tel" id="new-phone" class="form-control" placeholder="10-digit mobile" required>
+              </div>
+              <div class="form-group">
+                <label>Email Address</label>
+                <input type="email" id="new-email" class="form-control" placeholder="consumer@domain.com">
+              </div>
+              <div class="form-group">
+                <label>Address / Street</label>
+                <input type="text" id="new-address" class="form-control" placeholder="e.g. 24 Perundurai Road, Erode">
+              </div>
+              <div class="form-group">
+                <label>Sanctioned Load (kW)</label>
+                <input type="number" id="new-load" class="form-control" step="0.5" value="2.0">
+              </div>
+            </div>
+            <div style="margin-top: 1rem;">
+              <button type="submit" class="btn btn-primary">Register Consumer Profile</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- Consumer Directory Table -->
+      <div class="panel-card">
+        <div class="panel-header">
+          <div class="panel-title">📋 Registered Electricity Consumers Directory</div>
+          <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+            <input type="text" id="consumer-search" class="form-control" placeholder="Search name, EB number, or meter..." style="width: 260px;">
+            <select id="consumer-type-filter" class="form-control">
+              <option value="ALL">All Categories</option>
+              <option value="Domestic">Domestic</option>
+              <option value="Commercial">Commercial</option>
+              <option value="Industrial">Industrial</option>
+              <option value="Agricultural">Agricultural</option>
+            </select>
+          </div>
+        </div>
+        <div class="table-responsive">
+          <table class="custom-table">
+            <thead>
+              <tr>
+                <th>Consumer No</th>
+                <th>Name & Address</th>
+                <th>Type</th>
+                <th>Meter No</th>
+                <th>Load</th>
+                <th>Phone</th>
+                <th>Status</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody id="consumers-table-body">
+              <!-- Dynamically populated -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 3: METER READINGS & BILLING -->
+    <section id="tab-readings" class="tab-pane">
+      <div class="panel-card">
+        <div class="panel-header">
+          <div class="panel-title">📝 Record Meter Reading (Functional Requirement 2 & 3)</div>
+        </div>
+        <div class="panel-body">
+          <form id="record-reading-form">
+            <div class="form-grid">
+              <div class="form-group">
+                <label>Select Consumer *</label>
+                <select id="reading-consumer-select" class="form-control" required>
+                  <option value="">-- Choose Consumer --</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Billing Month *</label>
+                <input type="month" id="reading-month-input" class="form-control" value="2026-11" required>
+              </div>
+              <div class="form-group">
+                <label>Previous Meter Reading (kWh) *</label>
+                <input type="number" id="prev-reading-input" class="form-control" step="0.1" required>
+              </div>
+              <div class="form-group">
+                <label>Current Meter Reading (kWh) *</label>
+                <input type="number" id="curr-reading-input" class="form-control" step="0.1" required>
+              </div>
+            </div>
+
+            <div style="margin-top: 1rem; padding: 1rem; background: var(--bg); border-radius: 8px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem;">
+              <div>
+                <span style="color: var(--text-muted); font-size: 0.85rem;">Calculated Electricity Consumption:</span>
+                <strong id="preview-units" style="font-size: 1.25rem; color: var(--primary); margin-left: 0.5rem;">0.0 kWh</strong>
+              </div>
+              <div>
+                <span style="color: var(--text-muted); font-size: 0.85rem;">Estimated Bill Amount:</span>
+                <strong id="preview-cost" style="font-size: 1.25rem; color: var(--success); margin-left: 0.5rem;">₹0.00</strong>
+              </div>
+              <div>
+                <button type="submit" class="btn btn-primary">⚡ Record Reading & Generate Bill</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- Recent Readings Log -->
+      <div class="panel-card">
+        <div class="panel-header">
+          <div class="panel-title">📑 Recent Meter Reading Records & Billed Invoices</div>
+        </div>
+        <div class="table-responsive">
+          <table class="custom-table">
+            <thead>
+              <tr>
+                <th>Billing Period</th>
+                <th>Consumer Details</th>
+                <th>Category</th>
+                <th>Previous (kWh)</th>
+                <th>Current (kWh)</th>
+                <th>Units Consumed</th>
+                <th>Total Bill</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody id="readings-table-body">
+              <!-- Dynamically populated -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 4: HIGH CONSUMPTION ALERTS -->
+    <section id="tab-high" class="tab-pane">
+      <div class="panel-card">
+        <div class="panel-header">
+          <div class="panel-title">🚨 High-Consumption Consumers Identification (Scenario 14 Requirement 5)</div>
+        </div>
+        <div class="panel-body">
+          <p style="color: var(--text-muted); margin-bottom: 1rem; font-size: 0.9rem;">
+            Automatic identification of accounts exceeding recommended energy consumption ceilings:
+            <strong>Domestic > 400 kWh | Commercial > 1000 kWh | Industrial > 5000 kWh</strong>.
+          </p>
+
+          <div class="table-responsive">
+            <table class="custom-table">
+              <thead>
+                <tr>
+                  <th>Consumer No</th>
+                  <th>Consumer Name</th>
+                  <th>Category</th>
+                  <th>Period</th>
+                  <th>Units Consumed</th>
+                  <th>Alert Level</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody id="high-consumption-table-body">
+                <!-- Dynamically populated -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 5: PYTHON DATA SCIENCE & EDA -->
+    <section id="tab-data-science" class="tab-pane">
+      <div class="panel-card">
+        <div class="panel-header">
+          <div class="panel-title">📊 Python Data Science & Visualization Pipeline (25ITC31 Syllabus)</div>
+        </div>
+        <div class="panel-body">
+          <p style="color: var(--text-muted); margin-bottom: 1.5rem; font-size: 0.9rem;">
+            Scientific analytics executed via <code>python/analysis.py</code> utilizing <strong>NumPy, Pandas, Matplotlib, and Seaborn</strong>.
+            All charts represent empirical data retrieved, preprocessed (missing values & IQR outlier treatment), and visualized.
+          </p>
+
+          <div class="chart-grid">
+            <div class="chart-card">
+              <h4>1. Monthly Time-Series Consumption Trend <span class="badge badge-domestic">Line Plot</span></h4>
+              <img src="assets/charts/monthly_consumption_trend.png" alt="Monthly Trend" class="chart-img">
+            </div>
+
+            <div class="chart-card">
+              <h4>2. Category Share & Revenue Distribution <span class="badge badge-commercial">Donut & Bar</span></h4>
+              <img src="assets/charts/connection_type_distribution.png" alt="Category Distribution" class="chart-img">
+            </div>
+
+            <div class="chart-card">
+              <h4>3. Top 10 High Consumers Alert Horizon <span class="badge badge-industrial">Horizontal Bar</span></h4>
+              <img src="assets/charts/top_high_consumers.png" alt="Top High Consumers" class="chart-img">
+            </div>
+
+            <div class="chart-card">
+              <h4>4. Data Spread & Outlier Detection <span class="badge badge-agricultural">Histogram & Boxplot</span></h4>
+              <img src="assets/charts/consumption_distribution_and_outliers.png" alt="Distribution & Outliers" class="chart-img">
+            </div>
+
+            <div class="chart-card" style="grid-column: 1 / -1; max-width: 700px; margin: 0 auto;">
+              <h4>5. Feature Correlation Matrix Heatmap <span class="badge badge-domestic">Heatmap</span></h4>
+              <img src="assets/charts/correlation_heatmap.png" alt="Correlation Heatmap" class="chart-img">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 6: ACADEMIC SRS & ARCHITECTURE -->
+    <section id="tab-academics" class="tab-pane">
+      <div class="panel-card">
+        <div class="panel-header">
+          <div class="panel-title">📑 Academic Documentation & Course Syllabi Compliance</div>
+        </div>
+        <div class="panel-body">
+          <div class="doc-box">
+            <h2>Scenario 14: Electricity Consumption Management & Energy Usage Analysis</h2>
+            <p><strong>Institution:</strong> Velalar College of Engineering and Technology, Erode - 12</p>
+            <p><strong>Department:</strong> Department of Information Technology</p>
+            <p><strong>Author:</strong> Kanishka K | <strong>Register No:</strong> 732925ITR045 | <strong>Class:</strong> 25IT3A</p>
+            <hr style="margin: 1rem 0; border: none; border-top: 1px solid var(--border);">
+
+            <h3>Syllabus Mappings & Satisfied Requirements:</h3>
+            <ul>
+              <li><b>25ITT31 (DBMS):</b> Complete Relational schema, DDL/DML, 1NF to BCNF Normalization, Views, Triggers, Indexes in <code>database/schema.sql</code> and <code>database/queries.sql</code>.</li>
+              <li><b>25ITT32 (Java Programming):</b> Core Java OOP hierarchy, progressive tariff slab calculator, Collections, Java Streams API, custom exception handling in <code>java/src/com/ecm/</code>.</li>
+              <li><b>25ITT33 (Software Engineering):</b> IEEE-830 SRS Document, Use Case diagrams, Class diagrams, 3-Tier Architecture, and comprehensive Test Cases with Expected vs Actual results in <code>docs/</code>.</li>
+              <li><b>25ITC31 (Foundations of Data Science):</b> Python data retrieval, data cleaning, IQR outlier detection, descriptive statistics, and Matplotlib/Seaborn visualizations in <code>python/analysis.py</code> and <code>python/analysis.ipynb</code>.</li>
+            </ul>
+
+            <h3 style="margin-top: 1.5rem;">System Architecture Diagram</h3>
+            <pre>
++-----------------------------------------------------------------------------------+
+|                           PRESENTATION LAYER (Web UI & CLI)                       |
+|   - Responsive Dashboard (GitHub Pages 24/7 Live)                                 |
+|   - Interactive Console Java CLI (com.ecm.Main)                                   |
++-----------------------------------------------------------------------------------+
+                                        |
+                                        v
++-----------------------------------------------------------------------------------+
+|                        APPLICATION & BUSINESS LOGIC LAYER                         |
+|   - BillingService.java / tariff.js: Progressive Slab Calculation Engine          |
+|   - ReportService.java: Java Streams API High Consumption Detection              |
+|   - InputValidator.java: String & Regex Validation                                |
++-----------------------------------------------------------------------------------+
+                                        |
+                                        v
++-----------------------------------------------------------------------------------+
+|                          DATA & ANALYTICS STORAGE LAYER                           |
+|   - Relational Database (MySQL / SQLite / LocalStorage)                           |
+|   - Tables: tariff_plans, consumers, meter_readings, bills, audit_logs            |
+|   - Python Data Science Pipeline: Pandas, NumPy, Matplotlib, Seaborn              |
++-----------------------------------------------------------------------------------+
+            </pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Printable Invoice Receipt Modal -->
+  <div id="invoice-modal" class="modal-overlay" style="display: none;">
+    <div class="modal-content">
+      <div id="invoice-modal-content"></div>
+      <div style="padding: 1rem; background: var(--card-bg); border-top: 1px solid var(--border); display: flex; justify-content: flex-end; gap: 0.5rem;">
+        <button class="btn btn-outline" onclick="window.print()">🖨️ Print Receipt</button>
+        <button class="btn btn-primary" onclick="app.closeModal()">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/tariff.js"></script>
+  <script src="js/charts.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

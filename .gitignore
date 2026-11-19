@@ -1,0 +1,15 @@
+# Virtual Environment
+.venv/
+__pycache__/
+*.pyc
+
+# Java build artifacts
+java/bin/
+*.class
+
+# Operating System & IDE
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.log

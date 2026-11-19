@@ -1,0 +1,77 @@
+================================================================================
+       ELECTRICITY CONSUMPTION MANAGEMENT & ENERGY USAGE ANALYSIS SYSTEM       
+                 Velalar College of Engineering and Technology                 
+         Student: Kanishka K | Reg No: 732925ITR045 | Class: 25IT3A            
+================================================================================
+
+----------------------------- MAIN OPERATIONS -----------------------------
+ [1] Register New Consumer
+ [2] View All Registered Consumers
+ [3] Record Meter Reading (Previous vs Current)
+ [4] Calculate & Generate Electricity Bill
+ [5] View Monthly Consumption & Revenue Report
+ [6] Detect High-Consumption Consumers (Threshold Alert)
+ [7] Run Automated System Test Suite & Verification
+ [8] Exit Application
+---------------------------------------------------------------------------
+
+--- [2] All Registered Consumers ---
+ID     | Consumer No     | Name                   | Type          | Meter No       | Status    
+-----------------------------------------------------------------------------------------
+1001   | EB-2026-1001    | Kanishka K             | DOMESTIC      | MTR-ERD-8801   | ACTIVE    
+1002   | EB-2026-1002    | Aravind Swaminathan    | COMMERCIAL    | MTR-ERD-8802   | ACTIVE    
+1003   | EB-2026-1003    | Ramasamy Textiles      | INDUSTRIAL    | MTR-ERD-8803   | ACTIVE    
+1004   | EB-2026-1004    | Muthusamy Farm         | AGRICULTURAL  | MTR-ERD-8804   | ACTIVE    
+1005   | EB-2026-1005    | Deepa Jayaram          | DOMESTIC      | MTR-ERD-8805   | ACTIVE    
+1006   | EB-2026-1006    | Kavitha Murugesan      | DOMESTIC      | MTR-ERD-8806   | ACTIVE    
+-----------------------------------------------------------------------------------------
+Total Registered Consumers: 6
+
+--- [5] Monthly Consumption & Revenue Report: 2026-08 ---
+==========================================================================================
+                    MONTHLY CONSUMPTION & BILLING REPORT: 2026-08
+==========================================================================================
+Consumer No    | Name                 | Type         | Units (kWh)| Bill (INR)   | Status    
+------------------------------------------------------------------------------------------
+EB-2026-1001   | Kanishka K           | DOMESTIC     |     220.00 |       367.50 | PAID      
+EB-2026-1002   | Aravind Swaminathan  | COMMERCIAL   |     650.00 |      5678.40 | PAID      
+EB-2026-1003   | Ramasamy Textiles    | INDUSTRIAL   |    4600.00 |     45725.00 | PAID      
+EB-2026-1004   | Muthusamy Farm       | AGRICULTURAL |     350.00 |       180.00 | PAID      
+EB-2026-1005   | Deepa Jayaram        | DOMESTIC     |      85.00 |        36.75 | PAID      
+EB-2026-1006   | Kavitha Murugesan    | DOMESTIC     |     590.00 |      2604.00 | PAID      
+------------------------------------------------------------------------------------------
+ TOTAL SUMMARY:                                      |    6495.00 |     54591.65 |
+==========================================================================================
+
+--- [6] High-Consumption Consumers Alert (Functional Req 5) ---
+Threshold Standards: Domestic > 400 kWh | Commercial > 1000 kWh | Industrial > 5000 kWh
+==========================================================================================
+Consumer No     | Name                 | Type         | Month    | Units (kWh)| Classification
+------------------------------------------------------------------------------------------
+EB-2026-1006    | Kavitha Murugesan    | DOMESTIC     | 2026-08  |     590.00 | *** HIGH USAGE ALERT ***
+EB-2026-1006    | Kavitha Murugesan    | DOMESTIC     | 2026-09  |     650.00 | *** HIGH USAGE ALERT ***
+------------------------------------------------------------------------------------------
+Total High Consumption Alerts Detected: 2
+==========================================================================================
+
+====================================================================
+             TAMIL NADU ELECTRICITY DISTRIBUTION BOARD             
+                 ELECTRICITY CONSUMPTION INVOICE                    
+====================================================================
+ Bill Number    : BILL-2026-08-0110    Bill Date   : 2026-11-19
+ Consumer ID    : 1001                 Due Date    : 2026-12-04
+ Consumer Name  : Kanishka K           Tariff Type : DOMESTIC
+ Billing Period : 2026-08              Status      : UNPAID
+--------------------------------------------------------------------
+ CHARGE PARTICULARS                                     AMOUNT (INR)
+--------------------------------------------------------------------
+ Units Consumed (kWh)         :     220.00 units
+ Energy Charges (Slab Rated)  :                           315.00
+ Fixed Standing Charges       :                            35.00
+ Electricity Duty / Tax (5%)  :                            17.50
+--------------------------------------------------------------------
+ TOTAL AMOUNT PAYABLE         :                INR        367.50
+====================================================================
+ Please pay before due date to avoid disconnection surcharge.
+ Powered by: Energy Usage Analysis System (Student: Kanishka K)
+====================================================================
